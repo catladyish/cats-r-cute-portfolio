@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Cats r Cute</title>
@@ -8,14 +8,28 @@
 		<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 	</head>
 	<body>
-		<!--NOT MADE MOBILE COMPATABLE-->
-		<h1 id="mobile">WEBSITE NOT MOBILE COMPATABLE!</h1>
+		<script>
+			function openNav() {
+				document.getElementById("overlay").style.display = "flex";
+			}
+			
+			function closeNav() {
+				document.getElementById("overlay").style.display = "none";
+			}
+		</script>
 		
+		<div id="overlay">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Pricing</a>
+			<button class="not-button" onclick="closeNav()" >&times;</button>
+		</div>
 		<div id="content">
 			<div id="nav">
-				&nbsp;&nbsp;<a href="#" style="border-bottom: #7F0037 2px solid;">Home</a>&nbsp;&nbsp;&#x7c;
-				&nbsp;<a href="#">About</a>&nbsp;&nbsp;&#x7c;
-				&nbsp;<a href="#">Pricing</a>&nbsp;&nbsp;&#x7c;
+				<button class="not-button" id="menu-button" onclick="openNav()">&#9776;</button>
+				&nbsp;&nbsp;<a href="#" style="border-bottom: #7F0037 2px solid;">Home</a>&nbsp;&nbsp;
+				&nbsp;<a href="#">About</a>&nbsp;&nbsp;
+				&nbsp;<a href="#">Pricing</a>&nbsp;&nbsp;
 			</div>
 			<img src="logo.png" alt="cats r cute logo" id="logo" />
 			<div id="col-wrapper">
