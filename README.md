@@ -1,2 +1,2 @@
 # Cats r Cute - Portfolio
-Cats r cute, website for portfolio, NOT MOBILE COMPATABLE YET!
+Cats r cute, website for portfolio, NOW MOBILE COMPATIBLE!
